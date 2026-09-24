@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinderella | Dub Collection</title>
+    <meta
+      name="description"
+      content="Cinderella (1950) multilingual dub collection with language selector and MP4 downloads."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <div class="title-block">
+          <p class="eyebrow">Dub Collection</p>
+          <h1>Cinderella</h1>
+        </div>
+
+        <div class="meta-card">
+          <dl>
+            <div>
+              <dt>Year</dt>
+              <dd>1950</dd>
+            </div>
+            <div>
+              <dt>Studio</dt>
+              <dd>Walt Disney Productions</dd>
+            </div>
+            <div>
+              <dt>Category</dt>
+              <dd>Animated Feature</dd>
+            </div>
+          </dl>
+        </div>
+      </header>
+
+      <section class="player-panel" aria-labelledby="player-heading">
+        <div class="section-heading">
+          <h2 id="player-heading">Language video player</h2>
+          <label class="selector-wrap" for="language-select">
+            <span>Language</span>
+            <select id="language-select" aria-label="Select language"></select>
+          </label>
+        </div>
+
+        <video id="movie-player" controls preload="metadata" playsinline>
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="download-actions">
+          <a id="download-link" class="download-button" href="#" target="_blank" rel="noreferrer">
+            Download MP4
+          </a>
+        </div>
+      </section>
+
+      <section class="downloads-panel" aria-labelledby="downloads-heading">
+        <div class="section-heading compact">
+          <h2 id="downloads-heading">Language MP4 Downloads</h2>
+        </div>
+        <div id="download-grid" class="download-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
